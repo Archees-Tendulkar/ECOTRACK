@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrack - Catalogue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">EcoTrack</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalogue.html" class="active">Catalogue</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="catalogue-section section-shell">
+  <div class="section-header">
+    <p class="section-tag">Waste Guide</p>
+    <h2>Waste Segregation Catalogue</h2>
+  </div>
+ 
+
+  <div class="search-box">
+    <label for="searchInput">Search waste type</label>
+    <input type="text" id="searchInput" placeholder="Example: plastic, wet waste, e-waste" onkeyup="searchCatalogue()">
+    <small>Tip: try keywords like plastic, food, battery, glass, paper, or chemical.</small>
+  </div>
+
+  <div class="card-container" id="catalogueCards">
+    <div class="card search-card">
+      <h3>Wet Waste</h3>
+      <p>Includes food leftovers, fruit peels, tea waste, and biodegradable kitchen waste.</p>
+      <p><strong>Disposal tip:</strong> Put it in a wet waste bin and compost when possible.</p>
+    </div>
+    <div class="card search-card">
+      <h3>Dry Waste</h3>
+      <p>Includes paper, cardboard, clean packaging, and other non-biodegradable dry items.</p>
+      <p><strong>Disposal tip:</strong> Keep it dry and send recyclable items for collection.</p>
+    </div>
+    <div class="card search-card">
+      <h3>E-Waste</h3>
+      <p>Includes chargers, cables, small electronics, batteries, and damaged gadgets.</p>
+      <p><strong>Disposal tip:</strong> Never mix it with regular waste. Use authorized e-waste collection points.</p>
+    </div>
+    <div class="card search-card">
+      <h3>Plastic Waste</h3>
+      <p>Includes bottles, wrappers, containers, and single-use plastic materials.</p>
+      <p><strong>Disposal tip:</strong> Rinse recyclable plastic before placing it in the dry waste stream.</p>
+    </div>
+    <div class="card search-card">
+      <h3>Hazardous Waste</h3>
+      <p>Includes chemicals, cleaning agents, paint containers, and expired medicines.</p>
+      <p><strong>Disposal tip:</strong> Handle separately and do not dispose of it with household waste.</p>
+    </div>
+    <div class="card search-card">
+      <h3>Metal and Glass Waste</h3>
+      <p>Includes cans, glass jars, bottles, and small household metal scraps.</p>
+      <p><strong>Disposal tip:</strong> Clean and separate safely to avoid injury and improve recycling quality.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 EcoTrack | Catalogue for easier segregation and responsible disposal.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

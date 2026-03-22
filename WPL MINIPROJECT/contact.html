@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrack - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">EcoTrack</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="contact-page section-shell">
+  <div class="section-header">
+    <p class="section-tag">Get in Touch</p>
+    <h2>Contact & Feedback</h2>
+  </div>
+  <p>
+    Use this page to share suggestions, report problems, or send ideas that can improve the EcoTrack platform.
+  </p>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p><strong>Email:</strong> archees.t@somaiya.edu</p>
+      <p><strong>Phone:</strong> +91 99872 48158</p>
+      <p><strong>Location:</strong> Mumbai, India</p>
+    </div>
+
+    <div class="form-box contact-form">
+      <h2>Send Feedback</h2>
+      <form onsubmit="return feedbackMessage()">
+        <label for="feedbackName">Full Name</label>
+        <input type="text" id="feedbackName" placeholder="Enter your full name" required>
+
+        <label for="feedbackEmail">Email Address</label>
+        <input type="email" id="feedbackEmail" placeholder="Enter your email" required>
+
+        <label for="feedbackType">Message Category</label>
+        <input type="text" id="feedbackType" placeholder="Example: suggestion, doubt, feedback" required>
+
+        <label for="feedbackMessage">Your Message</label>
+        <textarea id="feedbackMessage" rows="5" placeholder="Write your message here" required></textarea>
+
+        <button type="submit" class="btn form-btn">Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 EcoTrack | Feedback helps improve awareness and user experience.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
